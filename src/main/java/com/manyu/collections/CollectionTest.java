@@ -1,11 +1,14 @@
 package com.manyu.collections;
 
+import java.util.ArrayDeque;
 import java.util.ArrayList;
 import java.util.Iterator;
 import java.util.LinkedList;
 import java.util.List;
+import java.util.PriorityQueue;
 import java.util.Stack;
 import java.util.Vector;
+
 
 public class CollectionTest {
 
@@ -13,7 +16,7 @@ public class CollectionTest {
 		// TODO Auto-generated method stub
 		
 		
-		List<String> list = new LinkedList<String>();
+		List<Employee> list = new LinkedList<Employee>();
 		List<String> list1 = new LinkedList<String>();
 		list1.add("there are 3");
 		
@@ -44,7 +47,7 @@ public class CollectionTest {
 		System.out.println(list);
 		
 		
-		
+	
 		
 		
 		
@@ -80,30 +83,6 @@ public class CollectionTest {
 		
 		
 		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-
 	}
 
 }

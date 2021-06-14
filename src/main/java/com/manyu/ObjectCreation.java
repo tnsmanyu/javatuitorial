@@ -23,6 +23,11 @@ public class ObjectCreation {
 		Constructor<ObjectCreation> constructor = ObjectCreation.class.getConstructor();
 		ObjectCreation obj2 = constructor.newInstance();
 		
+		Class.forName()
+		
+		
+		cloning
+		
 		
 	}
 
