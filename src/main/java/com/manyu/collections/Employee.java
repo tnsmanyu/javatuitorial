@@ -5,17 +5,33 @@ import java.util.Collections;
 import java.util.Comparator;
 import java.util.List;
 
-public class Employee implements Comparable<Employee>{
+public class Employee extends People implements Comparable<Employee>{
 	
-	String name; //manyu sai
-	int age; //30 26
+	public String name; 
+	int age;
 	
-	int salary; //100 100
+	int salary; 
 
 	@Override
 	public int compareTo(Employee o) {
-		// TODO Auto-generated method stub
 		return this.name.compareTo(o.name);
+	}
+	
+	
+	@Override
+	public boolean equals(Object obj) {
+		return this.name.equals(((Employee)obj).name);
+	}
+	
+	@Override
+	public String toString() {
+		return this.name;
+	}
+	
+	@Override
+	public int hashCode() {
+		// TODO Auto-generated method stub
+		return name.hashCode();
 	}
 
 }
@@ -93,6 +109,11 @@ class sortBySalary implements Comparator<Employee>{
 }
 
 
+
+class AdminEmployee extends Employee{
+	
+	
+}
 
 
 

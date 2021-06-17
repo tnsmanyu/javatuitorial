@@ -11,6 +11,8 @@ import java.util.TreeSet;
 
 import com.manyu.enums.ShirtSize;
 
+import jdk.internal.misc.FileSystemOption;
+
 public class SetTest {
 
 	public static void main(String[] args) {
@@ -29,9 +31,9 @@ public class SetTest {
 //		objs123.addAll(objs);
 		
 		
-		objs.forEach(obj -> {
-			System.out.println(obj);
-		});
+//		objs.forEach(obj -> {
+//			System.out.println(obj);
+//		});
 		
 		
 		EnumSet<ShirtSize> enums = EnumSet.allOf(ShirtSize.class); 
@@ -48,8 +50,23 @@ public class SetTest {
 		
 		
 		
+		Set<Employee> set = new HashSet<Employee>();
+		
+		Employee e = new Employee();
+		e.name = "manyu";
+		
+		Employee e1 = new Employee();
+		e1.name = "bhanu";
+		
+		Employee e2 = new Employee();
+		e2.name = "manyu";
+		
+		set.add(e);
+		set.add(e1);
+		set.add(e2);
 		
 		
+		set.forEach(System.out::println);
 		
 		
 		
